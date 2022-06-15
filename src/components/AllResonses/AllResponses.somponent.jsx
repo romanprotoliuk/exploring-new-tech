@@ -8,8 +8,6 @@ const AllResponses = ({ responses, loading, setLoading }) => {
     return <Response key={`response-${idx}`} prompt={elem.prompt} response={elem.response} engine_name={elem.engine_name} />
   })
 
-  console.log(responses)
-
   return (
     <div className="responses-wrapper">
       {loading ? (

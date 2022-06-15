@@ -3,6 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { supabase } from './utils/supabaseConfig';
 import AllResponses from './components/AllResonses/AllResponses.somponent';
+import Header from './components/Header/Header.component';
 
 const App = () => {
 
@@ -34,17 +35,18 @@ const App = () => {
 	return (
 		<div className="App">
 			<div className='main-wrapper'>
-			
-			<Form
-				payload={payload}
-				setPayload={setPayload}
-				// setResponses={setResponses}
-				setLoading={setLoading}
-				getData={getData}
-				responses={responses}
-				fetchSupabaseData={fetchSupabaseData}
-			/>
-			<AllResponses responses={responses} loading={loading} setLoading={setLoading}/>
+
+				<Header />
+				<Form
+					payload={payload}
+					setPayload={setPayload}
+					// setResponses={setResponses}
+					setLoading={setLoading}
+					getData={getData}
+					responses={responses}
+					fetchSupabaseData={fetchSupabaseData}
+				/>
+				<AllResponses responses={responses} loading={loading} setLoading={setLoading}/>
 
 			</div>
 		</div>

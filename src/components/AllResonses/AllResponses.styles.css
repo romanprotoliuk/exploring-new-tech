@@ -1,5 +1,8 @@
 .responses-wrapper {
-  height: 700px;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.185);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  height: 62vh;
   overflow-y: scroll;
   margin-top: 20px;
 }

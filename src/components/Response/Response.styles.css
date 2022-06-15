@@ -6,7 +6,9 @@
   margin: 0 auto;
   max-width: 500px;
   padding: 20px;
-  background-color: aquamarine;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background-color: white;
 }
 
 .card-inline {
@@ -24,6 +26,11 @@
 
 .card-question {
   margin-right: 40px;
+  font-weight: 400;
+}
+
+.actual-question {
+  font-weight: 600;
 }
 
 .card-text-align {

@@ -33,6 +33,8 @@ const App = () => {
 	
 	return (
 		<div className="App">
+			<div className='main-wrapper'>
+			
 			<Form
 				payload={payload}
 				setPayload={setPayload}
@@ -44,7 +46,7 @@ const App = () => {
 			/>
 			<AllResponses responses={responses} loading={loading} setLoading={setLoading}/>
 
-			
+			</div>
 		</div>
 	);
 }

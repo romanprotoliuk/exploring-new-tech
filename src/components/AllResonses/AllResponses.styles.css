@@ -1,0 +1,5 @@
+.responses-wrapper {
+  height: 700px;
+  overflow-y: scroll;
+  margin-top: 20px;
+}

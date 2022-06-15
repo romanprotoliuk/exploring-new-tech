@@ -1,6 +1,6 @@
 import Response from "../Response/Response.component"
 import Loading from '../Loading/Loading.component'
-
+import './AllResponses.styles.css'
 
 const AllResponses = ({ responses, loading, setLoading }) => {
 
@@ -11,14 +11,14 @@ const AllResponses = ({ responses, loading, setLoading }) => {
   console.log(responses)
 
   return (
-    <>
+    <div className="responses-wrapper">
       {loading ? (
         <>
           <Loading />
         </> ) : ''
       }
       {AllSupaResponses}
-    </>
+    </div>
   )
 }
 

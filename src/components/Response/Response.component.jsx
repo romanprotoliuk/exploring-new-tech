@@ -1,21 +1,31 @@
+import './Response.styles.css'
+
 const Response = ({ prompt, response, engine_name }) => {
   const str = engine_name
   str.split('')
 
   return (
-    <>
-      <div>
-        <h4>question:</h4>
-        <h3>{prompt}</h3>
+    <div className='card-wrapper-outter'>    
+      <div className="card-wrapper">
+        <div className="card-inline top-most">
+          <div className='first-half'>
+            <h4 className='card-text-align card-question'>question:</h4>
+          </div>
+          <div className='card-question-propmt'>
+            <h4 className='card-text-align card-question'>{prompt}</h4>
+          </div>
+        </div>
+
+        <div className="card-inline">
+          <div className='first-half'>
+            <h4 className='card-text-align card-question'>{str}:</h4>
+          </div>
+          <div className='card-question-propmt'>
+            <h4 className='card-text-align card-question'>{response}</h4>
+          </div>
+        </div>
       </div>
-      <div>
-        <h3>{str}</h3>
-      </div>
-      <div>
-        <h4>response:</h4>
-        <h3>{response}</h3>
-      </div>
-    </>
+    </div>
   )
 }
 

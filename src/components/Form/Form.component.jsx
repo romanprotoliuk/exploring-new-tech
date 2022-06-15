@@ -1,6 +1,7 @@
-import axios from "axios";
 import { useState } from "react";
 import { supabase } from "../../utils/supabaseConfig";
+import './Form.styles.css'
+
 
 const Form = (props) => {
   const [engine, setEngine] = useState('')
@@ -15,9 +16,9 @@ const Form = (props) => {
       case 'text-davinci-002':
         engineName = 'Dr. DaVinci';
         break;
-      case 'text-curie-001:':
-        engineName = 'Admiral Currie';
-        break
+      // case 'text-curie-001:':
+      //   engineName = 'Admiral Currie';
+      //   break
       case 'text-babbage-001':
         engineName = 'Major Babbage';
         break;
@@ -72,16 +73,19 @@ const Form = (props) => {
 
   return (
     <>
-      <form onSubmit={fetchOpenAiAPI} >
-        <label hidden htmlFor="textarea">
-          your AI question
-        </label>
-        <textarea
-          required
-          name="textarea"
-          value={props.payload.prompt}
-          onChange={(e) => handleTextAreaChange(e)}
-        />
+      <form onSubmit={fetchOpenAiAPI}>
+        <div>
+          <label hidden htmlFor="textarea">
+            your AI question
+          </label>
+          <textarea
+            className="textarea"
+            required
+            name="textarea"
+            value={props.payload.prompt}
+            onChange={(e) => handleTextAreaChange(e)}
+          />
+        </div>
 
         <label
           htmlFor="Choose which Ai you would like to query"
@@ -106,12 +110,12 @@ const Form = (props) => {
             Dr. DaVinci - the decipherer
           </option>
           
-          <option
+          {/* <option
             className="option"
             value="text-curie-001"
           >
             Admiral Curie - the capable
-          </option>
+          </option> */}
           
           <option
             className="option"

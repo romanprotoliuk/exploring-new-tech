@@ -1,0 +1,37 @@
+.card-wrapper-outter {
+  margin-top: 20px;
+}
+
+.card-wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.card-inline {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-inline.top-most {
+  margin-bottom: 10px;
+}
+
+.card-question-propmt { 
+  width: 100%;
+}
+
+.card-question {
+  margin-right: 40px;
+}
+
+.card-text-align {
+  text-align: start;
+}
+
+.first-half {
+  width: 200px;
+  display: flex;
+}
+
